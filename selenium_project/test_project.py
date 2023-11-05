@@ -30,15 +30,17 @@ driver.find_element(By.XPATH, Billing_locators.find_element_XPATH_button).click(
 driver.find_element(By.LINK_TEXT, Billing_locators.find_element_LINK_TEXT_adresses).click()
 driver.find_element(By.LINK_TEXT,Billing_locators.find_element_LINK_TEXT_edit).click()
 
-driver.find_element(By.ID, Billing_locators.find_element_ID_send_keys_name).send_keys('lukasz')
-driver.find_element(By.ID, Billing_locators.find_element_ID_send_keys_lastname).send_keys('jaglak')
+driver.find_element(By.ID, Billing_locators.find_element_ID_send_keys_name).send_keys('Łukasz')
+driver.find_element(By.ID, Billing_locators.find_element_ID_send_keys_lastname).send_keys('Jagielski')
 
 auto_select=Select(driver.find_element(By.ID,Billing_locators.find_element_ID_billing_country))
 auto_select.select_by_visible_text('Austria')
 
-driver.find_element(By.ID,Billing_locators.find_element_ID_billing_address1_send_keys).send_keys('kolesiowa')
+driver.find_element(By.ID,Billing_locators.find_element_ID_billing_address1_send_keys).send_keys('Fabryczna')
 driver.find_element(By.ID,Billing_locators.find_element_ID_billing_postcode_send_keys).send_keys('1010')
 driver.find_element(By.ID, Billing_locators.find_element_ID_billing_city_send_keys).send_keys('Wroclaw')
 driver.find_element(By.ID, Billing_locators.find_element_ID_billing_phone_send_keys).send_keys('352236153')
+driver.find_element(By.XPATH,Billing_locators.find_element_XPATH_button_save_address).click()
+time.sleep(5)
 
 driver.quit()
