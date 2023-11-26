@@ -1,6 +1,14 @@
 # Book Library REST API
 
-REST API for online library. It supports authors of books and books resources including authentication (JWT Token).
+REST API for online library was written as a part of course in Udemy. It supports authors of books and books resources. This is my first big project where i have learned alot about building REST API using python language. Topics that i have learned during this project:
+* how to create a REST API using the Python language and the Flask library;
+* using popular libraries available in Python, e.g. SQLAlchemy, Alembic, Pytest and many other;
+* creating queries to filter, sort and paginate data;
+* the application factory pattern;
+* writing REST API automted tests;
+* creating REST API documentation;
+* using MYSQL, SQLite databases;
+* using the API testing tool - Postman.
 
 The documentation can be found in `documentation.html`
 
